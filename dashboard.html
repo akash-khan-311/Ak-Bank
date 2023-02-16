@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="styles.css/dashboard.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="z-10 relative">
+        <header class="login-header bg-sky-400 py-10 ">
+            <h1 class="text-6xl font-bold text-center">
+                <span class="text-red-800">A</span><span class="text-green-800">K</span> Bank Dashboard
+            </h1>
+        </header>
+        <section class="mt-10 relative">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-gradient-to-r from-green-500 to-green-700  pl-12 py-10 rounded ">
+                    <h4 class="text-4xl">Deposit</h4>
+                    <h2 class="text-5xl mt-2">&#2547;<span id="deposit-amount">00</span></h2>
+                </div>
+                <div class="bg-gradient-to-r from-violet-500 to-fuchsia-500 pl-12 py-10 rounded ">
+                    <h4 class="text-4xl">Withdraw</h4>
+                    <h2 class="text-5xl mt-2">&#2547;<span id="withdraw-amount">00</span></h2>
+                </div>
+                <div class="bg-gradient-to-r from-yellow-500 to-red-500 pl-12 py-10 rounded ">
+                    <h4 class="text-4xl">Balence</h4>
+                    <h2 class="text-5xl mt-2">&#2547;<span id="balence">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposti And Withdraw Section -->
+        <section class="mt-36">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                <!-- Deposit Feild  -->
+                <div class="bg-gradient-to-r from-purple-700 to-green-700  pl-12 py-10 rounded ">
+                    <h4 class="text-4xl">Please Deposit</h4>
+                    <input placeholder="Deposti Amount"
+                        class="mt-10 w-6/12 block text-2xl text-black py-1 px-1 ml-10 rounded" type="number" name=""
+                        id="deposit-feild">
+                    <button id="deposit-btn"
+                        class="mt-8 ml-10 py-2 px-16 rounded text-2xl bg-green-500 hover:bg-green-700"
+                        type="button">Deposit</button>
+                </div>
+                <!-- withdraw feild  -->
+                <div class="bg-gradient-to-r from-orange-500 to-red-500 pl-12 py-10 rounded ">
+                    <h4 class="text-4xl">Please Withdraw</h4>
+                    <input placeholder="Withdraw Amount"
+                        class="mt-10 w-6/12 block text-2xl text-black py-1 px-1 ml-10 rounded" type="number" name=""
+                        id="withdraw-feild">
+                    <button id="withdraw-btn"
+                        class="mt-8 ml-10 py-2 px-16 rounded text-2xl bg-cyan-900 hover:bg-cyan-700"
+                        type="button">Withdrw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
